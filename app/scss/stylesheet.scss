@@ -1,0 +1,10 @@
+@import "compass";
+@import "compass/css3";
+@import "font-awesome/font-awesome";
+@import "mixins";
+@import "report";
+
+.container{
+    @include display-flex;
+    @include justify-content(center);
+}

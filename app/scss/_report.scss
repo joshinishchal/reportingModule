@@ -1,0 +1,94 @@
+.nishchal-report {
+    @include box-sizing(border-box);
+    @include font-face("Avenir Next", font-files("/fonts/Avenir-Next.otf"));
+    font-family: Avenir Next, calibri, 'Open Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif, FontAwesome;
+    width:280px;
+    height:auto;
+    border:3px solid #ddd;
+    background-color:white;
+    //@include display-flex;
+
+    & *{
+        @include box-sizing(border-box);
+    }
+
+    & > p:first-child{
+        height:60px;
+        padding-top:15px;
+        padding-right:15px;
+    }
+
+    & p i:last-child{
+        color: #999999;
+        float:right;
+    }
+
+    & p,header,footer,h5,div{
+        margin:0;
+    }
+
+    & p,header,h5,div{
+        padding-left:15px;
+    }
+
+    & p,h5,div{
+        padding-bottom:5px;
+    }
+
+    & header h4{
+        margin:0;
+    }
+
+    & header ~ p{
+        font-size:12px;
+        padding-bottom:0;
+    }
+
+    .error{
+        color:#cc0000;
+        font-weight:600;
+
+        & i{
+            padding-right:5px;
+        }
+    }
+
+    .ok{
+        color:green;
+
+        & i{
+            padding-right:5px;
+        }
+    }
+
+    .description, .path{
+        color:#999999;
+        font-weight:500;
+    }
+
+    footer{
+        margin-top:15px;
+        height:70px;
+
+        & div{
+            height:70px;
+            padding-top:10px;
+        }
+
+        & p{
+            padding-left:0px;
+        }
+    }
+
+    footer .success, footer .failure{
+        border-top:1px solid #ddd;
+    }
+
+    footer .success{
+        border-right:1px solid #ddd;
+    }
+
+    .spanish-sky-blue{
+        color:#20B2AA;
+    }
+}

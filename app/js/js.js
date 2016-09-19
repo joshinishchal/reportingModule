@@ -1,0 +1,1 @@
+var statusReport = angular.module("statusReport",["directives.report"]);
