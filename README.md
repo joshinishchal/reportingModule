@@ -1,1 +1,1 @@
-# reportingModule
+# This repository contains a module to show Reports of any kind.
