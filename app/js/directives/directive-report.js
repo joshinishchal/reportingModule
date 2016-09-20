@@ -14,24 +14,7 @@ reportModule.directive("report",[function(){
                     "failuretext" : "@",
                     "failurecount" : "@"
                 },
-        "template" : `<section class="nishchal-report row">
-                        <p id="stateDefination" data-ng-bind="state" class="row {{state.toLowerCase()}}"></p>
-                        <header class="row">
-                            <h4 data-ng-bind="title" class="row main-text-color"></h4>
-                        </header>
-                        <p data-ng-bind="description" class="row description"></p>
-                        <p data-ng-bind="path" class="row path"></p>
-                        <footer class="row">
-                            <div class="success col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <p data-ng-bind="successtext" class="row main-text-color"></p>
-                                <p data-ng-bind="successcount" class="row"></p>
-                            </div>
-                            <div class="failure col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <p data-ng-bind="failuretext" class="row {{state.toLowerCase()}}"></p>
-                                <p data-ng-bind="failurecount" class="row {{state.toLowerCase()}}"></p>
-                            </div>
-                        </footer>
-                    </section>`,
+        "templateUrl" : "templates/report.html",
         "link" : function(scope, element, attr){
             scope.$watch("state", function(){
                 if(scope.state.toLowerCase() == "error"){

@@ -6,7 +6,6 @@
     height:auto;
     border:3px solid #ddd;
     background-color:white;
-    //@include display-flex;
 
     & *{
         @include box-sizing(border-box);
